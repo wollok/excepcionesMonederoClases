@@ -5,7 +5,7 @@ class Monedero {
 
 	method poner(cantidad) {
 		self.validarMonto(cantidad)
-		plata += cantidad
+		plata = plata + cantidad
 	}
 
 	method sacar(cantidad) {
