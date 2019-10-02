@@ -1,13 +1,7 @@
 class UserException inherits wollok.lang.Exception {}
 
 class Monedero {
-	var plata
-
-	constructor(_plata) {
-		plata = _plata	
-	}
-	
-	method plata() = plata
+	var property plata
 
 	method poner(cantidad) {
 		self.validarMonto(cantidad)
@@ -17,14 +11,14 @@ class Monedero {
 	method sacar(cantidad) {
 		self.validarMonto(cantidad)
 		if (cantidad > plata) {
-			throw new UserException("Debe sacar menos de " + plata)
+			throw new UserException(message = "Debe sacar menos de " + plata)
 		} 
-		plata -= cantidad
+		plata = plata - cantidad
 	}
 
 	method validarMonto(cantidad) {
 		if (cantidad < 0) {
-			throw new UserException("La cantidad debe ser positiva")
+			throw new UserException(message = "La cantidad debe ser positiva")
 		}
 	}
 }
