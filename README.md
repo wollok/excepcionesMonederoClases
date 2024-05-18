@@ -1,6 +1,6 @@
 # Monedero (Excepciones) - con clases
  
-[![Build Status](https://travis-ci.org/wollok/excepcionesMonederoClases.svg?branch=master)](https://travis-ci.org/wollok/excepcionesMonederoClases)
+[![Build Status](https://github.com/wollok/excepcionesMonederoClases/actions/workflows/ci.yml/badge.svg)](https://github.com/wollok/excepcionesMonederoClases/actions/workflows/ci.yml)
 
 
 <img src="img/monedero.png" height="150" width="150">
